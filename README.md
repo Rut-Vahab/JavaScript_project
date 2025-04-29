@@ -15,18 +15,16 @@ The system includes:
 
 - **JavaScript**: Client-side development and user interactions.
 - **HTML/CSS**: Website structure and styling.
-- **React (if applicable)**: If you're using React, mention it here for the component-based structure.
-- **Node.js (if applicable)**: For server-side development, if relevant.
-- **Bootstrap (if applicable)**: Or any other design framework you used for UI.
+
 
 ## How to Run the Project
 
 1. Install all required dependencies:
    ```bash
    npm install
-Run the server:
-
-```bash
-npm start
-Open your browser and go to:
-http://localhost:3000
+2.Run the server:
+   ```bash
+   npm start
+3.Open your browser and go to:
+   ```bash
+   http://localhost:3000
