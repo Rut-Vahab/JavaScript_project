@@ -25,6 +25,9 @@ The system includes:
 2.Run the server:
    ```bash
    npm start
+1. Install all required dependencies:
+   ```bash
+   npm install
 3.Open your browser and go to:
    ```bash
    http://localhost:3000
