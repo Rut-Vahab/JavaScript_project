@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/pay.css">
+    <title>Payment</title>
+
+</head>
+
+<body>
+    <div class="payment-form">
+        <h2>Payment Details</h2>
+        <div class="input-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" placeholder="Enter your card number">
+        </div>
+        <div class="input-group">
+            <label for="cardName">Cardholder Name</label>
+            <input type="text" id="cardName" placeholder="Enter the cardholder's name">
+        </div>
+        <div class="input-group">
+            <label for="expiryDate">Expiry Date (MM/YYYY)</label>
+            <input type="text" id="expiryDate" placeholder="MM/YYYY">
+        </div>
+        <div class="input-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="Enter CVV">
+            <label for="cvv">password</label>
+            <input id="pass">
+        </div>
+        <button class="btn-submit">Submit Payment</button>
+        <button class="complete" onclick="f1()"> complete the purchase</button>
+    </div>
+</body>
+<script>
+    function f1() {
+        let str = sessionStorage.getItem("currentUser");
+        let pass=document.getElementById("pass").value;
+        let strr = JSON.parse(str);
+        if (str) {
+            if(!pass)
+               alert("input password")
+          else if(pass==strr.password)
+                 window.location.href = "./finish.html";
+           else
+               alert("yuor password is incorrect")
+        }
+        else {
+            alert("Not connected to login")
+            window.location.href = "./Contact.html";
+        }
+    }
+</script>
+
+</html>
